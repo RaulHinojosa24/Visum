@@ -1,0 +1,20 @@
+{
+    "plants": [
+        {
+            "nom": "Polystichum setiferum",
+            "classificacio": "Pteridophyta",
+            "caracteristiques": [
+                "Bipinnaticomposta"
+            ],
+            "imatges": []
+        },
+        {
+            "nom": "a",
+            "classificacio": "a",
+            "caracteristiques": [
+                "a"
+            ],
+            "imatges": []
+        }
+    ]
+}
