@@ -6,15 +6,11 @@
             "caracteristiques": [
                 "Bipinnaticomposta"
             ],
-            "imatges": []
-        },
-        {
-            "nom": "a",
-            "classificacio": "a",
-            "caracteristiques": [
-                "a"
-            ],
-            "imatges": []
+            "imatges": [
+                "/imatges/polystichum_setiferum/imatge1.jpg",
+                "/imatges/polystichum_setiferum/imatge2.jpg",
+                "/imatges/polystichum_setiferum/imatge3.jpg"
+            ]
         }
     ]
 }

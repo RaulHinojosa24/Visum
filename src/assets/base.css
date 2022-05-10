@@ -1,6 +1,8 @@
 :root {
   --background-color: beige;
-  --font-family: Garamond, serif;
+  --primary-color: #364215;
+  --secondary-color: beige;
+  --font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
