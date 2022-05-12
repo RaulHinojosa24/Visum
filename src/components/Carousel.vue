@@ -6,26 +6,13 @@ export default {
 
         }
     },
-    props: {
-        plant: Object
-    },
     components: { CarouselSlide },
     methods: {
-        prevImage() {
-            if (this.imgIndex <= 0) {
-                this.imgIndex = this.plant.imatges.length - 1;
-                return;
-            }
-
-            this.imgIndex--;
+        prev() {
+            this.$emit("prevImage");
         },
-        nextImage() {
-            if (this.imgIndex + 1 >= this.plant.imatges.length) {
-                this.imgIndex = 0;
-                return;
-            }
-
-            this.imgIndex++;
+        next() {
+            this.$emit("nextImage");
         }
     }
 }
@@ -34,17 +21,17 @@ export default {
 <template>
     <div class="carousel">
         <slot></slot>
-        <i @click="prevImage" class="fa-solid fa-chevron-left arrow" id="left-arrow"></i>
-        <i @click="nextImage" class="fa-solid fa-chevron-right arrow" id="right-arrow"></i>
+
+        <i @click="prev" class="fa-solid fa-chevron-left arrow" id="left-arrow"></i>
+        <i @click="next" class="fa-solid fa-chevron-right arrow" id="right-arrow"></i>
     </div>
 </template>
 
 <style scoped>
 .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .arrow {
@@ -53,7 +40,7 @@ export default {
     transform: translateY(-50%);
     color: white;
     font-size: 3rem;
-    text-shadow: 0px 0px 20px #000000;
+    text-shadow: 0px 3px 3px black;
 }
 
 .arrow:hover {

@@ -14,7 +14,26 @@ export default {
       plants: []
     }
   },
+  computed: {
+    slidesLen() {
+      return this.plants[this.plantIndex].imatges.length;
+    }
+  },
   methods: {
+    prevImage() {
+      if (this.visibleSlide <= 0) {
+        this.visibleSlide = this.slidesLen - 1;
+      } else {
+        this.visibleSlide--;
+      }
+    },
+    nextImage() {
+      if (this.visibleSlide >= this.slidesLen - 1) {
+        this.visibleSlide = 0;
+      } else {
+        this.visibleSlide++;
+      }
+    },
     prevPlant() {
       if (this.plantIndex <= 0) {
         this.plantIndex = this.plants.length - 1;
@@ -42,13 +61,12 @@ export default {
 </script>
 
 <template>
-  <div class="app">
     <header>
-      <h1 id="title">Visum</h1>
+      <h1 id="title">visum</h1>
     </header>
     <main>
       <div class="card">
-        <Carousel v-if="plants.length != 0">
+        <Carousel v-if="plants.length != 0" @prevImage="prevImage" @nextImage="nextImage">
           <CarouselSlide v-for="(imatge, index) in plants[plantIndex].imatges" :key="imatge" :index="index"
             :visibleSlide="visibleSlide">
             <img :src="imatge" alt="" srcset="">
@@ -62,26 +80,22 @@ export default {
     </main>
     <footer>
     </footer>
-  </div>
 </template>
 
 <style>
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import './assets/base.css';
 
-html {
-  background-color: var(--background-color);
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-.app {
-  min-height: 100vh;
+#app {
+  background-color: var(--background-color);
 
   font-family: var(--font-family);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #title {
@@ -94,6 +108,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: black;
 }
 
 .buttons-container {
@@ -117,13 +137,15 @@ html {
 
 header,
 footer {
-  min-height: 10vh;
-  max-height: 10vh;
+  min-height: 10%;
+  max-height: 10%;
+  height: 10%;
 }
 
 main {
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 80%;
+  max-height: 80%;
+  height: 80%;
 }
 
 header,
@@ -133,14 +155,11 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
 }
 
 img {
   display: block;
-  width: inherit;
-  max-height: calc(80vh * 0.9);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  max-height: 100%;
+  max-width: 100%;
 }
 </style>
