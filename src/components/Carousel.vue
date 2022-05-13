@@ -1,57 +1,61 @@
 <script>
 import CarouselSlide from "./CarouselSlide.vue";
 export default {
-    data() {
-        return {
-
-        }
+  data() {
+    return {};
+  },
+  components: { CarouselSlide },
+  methods: {
+    prev() {
+      this.$emit("prevImage");
     },
-    components: { CarouselSlide },
-    methods: {
-        prev() {
-            this.$emit("prevImage");
-        },
-        next() {
-            this.$emit("nextImage");
-        }
-    }
-}
+    next() {
+      this.$emit("nextImage");
+    },
+  },
+};
 </script>
 
 <template>
-    <div class="carousel">
-        <slot></slot>
+  <div class="carousel">
+    <slot></slot>
 
-        <i @click="prev" class="fa-solid fa-chevron-left arrow" id="left-arrow"></i>
-        <i @click="next" class="fa-solid fa-chevron-right arrow" id="right-arrow"></i>
-    </div>
+    <i @click="prev" class="fa-solid fa-chevron-left arrow" id="left-arrow"></i>
+    <i
+      @click="next"
+      class="fa-solid fa-chevron-right arrow"
+      id="right-arrow"
+    ></i>
+  </div>
 </template>
 
 <style scoped>
 .carousel {
-    position: relative;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 3rem;
-    text-shadow: 0px 3px 3px black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0px 3px 3px black;
+  transition: font 0.1s;
 }
 
 .arrow:hover {
-    cursor: pointer;
+  cursor: pointer;
+  font-size: 3.5rem;
 }
 
 #left-arrow {
-    left: 1rem;
+  left: 1rem;
 }
 
 #right-arrow {
-    right: 1rem;
+  right: 1rem;
 }
 </style>

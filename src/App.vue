@@ -1,8 +1,8 @@
 <script setup>
-import PlantCard from './components/PlantCard.vue';
-import PlantsJson from './assets/plants.json'
-import Carousel from './components/Carousel.vue';
-import CarouselSlide from './components/CarouselSlide.vue';
+import PlantCard from "./components/PlantCard.vue";
+import PlantsJson from "./assets/plants.json";
+import Carousel from "./components/Carousel.vue";
+import CarouselSlide from "./components/CarouselSlide.vue";
 </script>
 
 <script>
@@ -11,13 +11,13 @@ export default {
     return {
       plantIndex: 0,
       visibleSlide: 0,
-      plants: []
-    }
+      plants: [],
+    };
   },
   computed: {
     slidesLen() {
       return this.plants[this.plantIndex].imatges.length;
-    }
+    },
   },
   methods: {
     prevImage() {
@@ -53,99 +53,59 @@ export default {
   },
   mounted() {
     this.plants = PlantsJson.plants
-      .map(value => ({ value, sort: Math.random() }))
+      .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-  }
-}
+  },
+};
 </script>
 
 <template>
-    <header>
-      <h1 id="title">visum</h1>
-    </header>
-    <main>
-      <div class="card">
-        <Carousel v-if="plants.length != 0" @prevImage="prevImage" @nextImage="nextImage">
-          <CarouselSlide v-for="(imatge, index) in plants[plantIndex].imatges" :key="imatge" :index="index"
-            :visibleSlide="visibleSlide">
-            <img :src="imatge" alt="" srcset="">
-          </CarouselSlide>
-        </Carousel>
-        <div class="buttons-container">
-          <button @click="prevPlant">Prev plant</button>
-          <button @click="nextPlant">Next plant</button>
-        </div>
+  <header>
+    <h1 id="title">
+      <span>v</span><span>i</span><span>s</span><span>u</span><span>m</span>
+    </h1>
+  </header>
+  <main>
+    <div class="card">
+      <Carousel
+        v-if="plants.length != 0"
+        @prevImage="prevImage"
+        @nextImage="nextImage"
+      >
+        <CarouselSlide
+          v-for="(imatge, index) in plants[plantIndex].imatges"
+          :key="imatge"
+          :index="index"
+          :visibleSlide="visibleSlide"
+          :style="{ 'background-image': 'url(' + imatge + ')' }"
+        >
+        </CarouselSlide>
+      </Carousel>
+    </div>
+    <div class="buttons-container">
+      <div class="row show-info">
+        <button @click="prevPlant">Mostra Informació</button>
       </div>
-    </main>
-    <footer>
-    </footer>
+      <div class="row move-plant">
+        <button @click="prevPlant">Anterior</button>
+        <button @click="nextPlant">Següent</button>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
 </template>
 
 <style>
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import './assets/base.css';
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "./assets/base.css";
 
-html, body, #app {
+html,
+body,
+#app {
   width: 100%;
   height: 100%;
   margin: 0;
-}
-
-#app {
-  background-color: var(--background-color);
-
-  font-family: var(--font-family);
-}
-
-#title {
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-  font-family: Garamond, serif;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  background-color: black;
-}
-
-.buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 10%;
-  width: 100%;
-}
-
-.buttons-container button {
-  flex: 1 1 auto;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 20px;
-  cursor: pointer;
-  outline: inherit;
-}
-
-header,
-footer {
-  min-height: 10%;
-  max-height: 10%;
-  height: 10%;
-}
-
-main {
-  min-height: 80%;
-  max-height: 80%;
-  height: 80%;
 }
 
 header,
@@ -157,9 +117,72 @@ footer {
   justify-content: center;
 }
 
-img {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
+header {
+  height: 10%;
+}
+
+main {
+  height: 90%;
+}
+
+#app {
+  background-color: var(--primary-color);
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+}
+
+#title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: Garamond, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#title span {
+  transition: font 0.2s, color 0.2s;
+}
+
+#title span:hover {
+  font-size: 110%;
+  color: var(--accent-color);
+}
+
+.card {
+  height: 85%;
+  width: 100%;
+}
+
+.buttons-container {
+  width: 100%;
+  height: 15%;
+}
+
+.buttons-container .row {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.show-info {
+  grid: 1fr;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  transition: font 0.2s, color 0.2s;
+  width: 100%;
+  height: 100%;
+}
+
+button:hover,
+button:active {
+  font-size: 1.1rem;
+  color: var(--primary-color);
 }
 </style>
