@@ -44,6 +44,7 @@ export default {
   font-size: 3rem;
   text-shadow: 0px 3px 3px black;
   transition: font 0.1s;
+  user-select: none;
 }
 
 .arrow:hover {

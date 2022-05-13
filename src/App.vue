@@ -130,16 +130,17 @@ main {
 #app {
   background-color: var(--primary-color);
   font-family: var(--font-family);
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 #title {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  font-family: Garamond, serif;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
   align-items: center;
+  user-select: none;
 }
 
 #title span {
@@ -148,7 +149,7 @@ main {
 
 #title span:hover {
   font-size: 110%;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .card {
@@ -167,13 +168,15 @@ main {
   height: 50%;
 }
 
-.show-info {
-  grid: 1fr;
+.show-info button {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--accent-color);
 }
 
 button {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--font-color);
   border: none;
   cursor: pointer;
   outline: inherit;
