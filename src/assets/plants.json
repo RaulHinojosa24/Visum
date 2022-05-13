@@ -11,6 +11,18 @@
                 "/imatges/polystichum_setiferum/imatge2.jpg",
                 "/imatges/polystichum_setiferum/imatge3.jpg"
             ]
+        },
+        {
+            "nom": "Pinus halepensis",
+            "classificacio": "Pinus",
+            "caracteristiques": [
+                "Hace polen xd"
+            ],
+            "imatges": [
+                "/imatges/pinus_halepensis/imatge1.jpg",
+                "/imatges/pinus_halepensis/imatge2.jpg",
+                "/imatges/pinus_halepensis/imatge3.jpg"
+            ]
         }
     ]
 }

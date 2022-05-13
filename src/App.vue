@@ -35,6 +35,7 @@ export default {
       }
     },
     prevPlant() {
+      this.visibleSlide = 0;
       if (this.plantIndex <= 0) {
         this.plantIndex = this.plants.length - 1;
         return;
@@ -43,6 +44,7 @@ export default {
       this.plantIndex--;
     },
     nextPlant() {
+      this.visibleSlide = 0;
       if (this.plantIndex + 1 >= this.plants.length) {
         this.plantIndex = 0;
         return;
@@ -85,7 +87,7 @@ export default {
     </div>
     <div class="buttons-container">
       <div class="row show-info">
-        <button @click="prevPlant">Mostra Informació</button>
+        <button>Mostra Informació</button>
       </div>
       <div class="row move-plant">
         <button @click="prevPlant">Anterior</button>
