@@ -133,6 +133,7 @@ body,
   width: 100%;
   height: 100%;
   margin: 0;
+  font-size: 18px;
 }
 
 header,
@@ -174,7 +175,7 @@ main {
 
 #title span:hover {
   font-size: 110%;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .info-card {
@@ -193,7 +194,7 @@ main {
 
 .info-title {
   text-decoration: underline;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .info-card-enter-active,
@@ -215,6 +216,7 @@ main {
 .buttons-container {
   width: 100%;
   z-index: 10;
+  border-top: 0.5px solid var(--primary-color);
 }
 
 .buttons-container .row {
@@ -224,11 +226,11 @@ main {
 }
 
 .show-info button {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 button {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   color: var(--font-color);
   border: none;
   cursor: pointer;
