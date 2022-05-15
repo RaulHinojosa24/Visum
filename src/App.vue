@@ -9,6 +9,7 @@ import CarouselSlide from "./components/CarouselSlide.vue";
 export default {
   data() {
     return {
+      displayInfo: false,
       plantIndex: 0,
       visibleSlide: 0,
       plants: [],
@@ -68,13 +69,9 @@ export default {
       <span>v</span><span>i</span><span>s</span><span>u</span><span>m</span>
     </h1>
   </header>
-  <main>
+  <main v-if="plants.length != 0">
     <div class="card">
-      <Carousel
-        v-if="plants.length != 0"
-        @prevImage="prevImage"
-        @nextImage="nextImage"
-      >
+      <Carousel @prevImage="prevImage" @nextImage="nextImage">
         <CarouselSlide
           v-for="(imatge, index) in plants[plantIndex].imatges"
           :key="imatge"
@@ -84,10 +81,38 @@ export default {
         >
         </CarouselSlide>
       </Carousel>
+
+      <transition name="info-card">
+        <div class="info-card" v-show="displayInfo">
+          <div class="info-group">
+            <h2 class="info-title">Nom</h2>
+            <p>
+              <em>{{ plants[plantIndex].nom }}</em>
+            </p>
+          </div>
+          <div class="info-group">
+            <h2 class="info-title">Classificació</h2>
+            <p>
+              <em>{{ plants[plantIndex].classificacio }}</em>
+            </p>
+          </div>
+          <div class="info-group">
+            <h2 class="info-title">Característiques</h2>
+            <p
+              v-for="carac in plants[plantIndex].caracteristiques"
+              :key="carac"
+            >
+              {{ carac }}
+            </p>
+          </div>
+        </div>
+      </transition>
     </div>
     <div class="buttons-container">
       <div class="row show-info">
-        <button>Mostra Informació</button>
+        <button @click="displayInfo = !displayInfo">
+          {{ displayInfo ? "Amaga Informació" : "Mostra Informació" }}
+        </button>
       </div>
       <div class="row move-plant">
         <button @click="prevPlant">Anterior</button>
@@ -152,14 +177,44 @@ main {
   color: var(--secondary-color);
 }
 
-.card {
-  height: 85%;
+.info-card {
+  background-color: var(--secondary-color);
+  position: absolute;
+  height: 100%;
   width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.info-title {
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+.info-card-enter-active,
+.info-card-leave-active {
+  transition: top 0.5s ease;
+}
+
+.info-card-enter-from,
+.info-card-leave-to {
+  top: 100%;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .buttons-container {
   width: 100%;
-  height: 15%;
+  z-index: 10;
 }
 
 .buttons-container .row {
@@ -169,8 +224,6 @@ main {
 }
 
 .show-info button {
-  width: 50%;
-  margin: 0 auto;
   background-color: var(--accent-color);
 }
 
@@ -182,7 +235,7 @@ button {
   outline: inherit;
   transition: font 0.2s, color 0.2s;
   width: 100%;
-  height: 100%;
+  height: 45px;
 }
 
 button:hover,
