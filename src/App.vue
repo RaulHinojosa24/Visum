@@ -69,7 +69,7 @@ export default {
     <div class="nav-bar">
       <button @click="navBarActive = 0">Llista</button>
       <button @click="navBarActive = 1">Visum</button>
-      <button @click="navBarActive = 2">A saber</button>
+      <button @click="navBarActive = 2">[tercer]</button>
       <span
         id="nav-select-color"
         :class="navBarActive == 0 ? '' : navBarActive == 1 ? 'second' : 'third'"
@@ -81,7 +81,11 @@ export default {
   </header>
 
   <main v-if="plants.length != 0">
-    <div class="visum">
+    <div class="lista" v-show="navBarActive == 0">
+      <h1>LLISTA</h1>
+    </div>
+
+    <div class="visum" v-show="navBarActive == 1">
       <div class="card">
         <Carousel @prevImage="prevImage" @nextImage="nextImage">
           <CarouselSlide
@@ -131,6 +135,10 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="prueba" v-show="navBarActive == 2">
+      <h1>PROVA</h1>
+    </div>
   </main>
 
   <footer></footer>
@@ -165,7 +173,7 @@ header {
 }
 
 .nav-bar {
-  height: 45px;
+  min-height: 45px;
   display: flex;
   width: 100%;
   position: relative;
@@ -201,7 +209,7 @@ header {
 }
 
 #title {
-  height: 50%;
+  height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-weight: bold;
@@ -230,7 +238,9 @@ main {
   height: 85%;
 }
 
-.visum {
+.visum,
+.lista,
+.prueba {
   display: contents;
   width: 100%;
   height: 100%;
