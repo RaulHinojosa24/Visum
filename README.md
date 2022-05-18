@@ -1,6 +1,6 @@
 # Visum 🍀  #WorkInProgress
 
-This project is done to help my girlfriend (and her classmates) study for a biology test at university.
+This project is done to help my girlfriend (and her classmates) study for a botany test at university.
 
 It's a plant carousel with images and info.
 
