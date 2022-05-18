@@ -1,7 +1,8 @@
 # Visum 🍀  #WorkInProgress
 
 This project is done to help my girlfriend (and her classmates) study for a biology test at university.
-It's a plants carousel with images and info.
+
+It's a plant carousel with images and info.
 
 ## Project status 
 
