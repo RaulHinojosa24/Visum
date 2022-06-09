@@ -12,8 +12,8 @@ It's a plant carousel with images and info.
 
 ### What you will be able to do:
 
-1. Add each plant of a list of known and unknown plants.
-2. See that list in a new tab
+1. Add each plant to a list of known and unknown plants.
+2. See that list in a new tab.
 
 ## Technology
 
