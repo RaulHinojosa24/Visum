@@ -9,6 +9,9 @@ import CarouselSlide from "./components/CarouselSlide.vue";
 export default {
   data() {
     return {
+      APP_STATUS: {
+
+      },
       displayInfo: false,
       plantIndex: 0,
       visibleSlide: 0,
@@ -19,6 +22,18 @@ export default {
   computed: {
     slidesLen() {
       return this.plants[this.plantIndex].imatges.length;
+    },
+    knownPlants() {
+      return this.plants.filter(plant => plant.known);
+    },
+    unknownPlants() {
+      return this.plants.filter(plant => plant.known == false);
+    },
+    isThisPlantKnown() {
+      return this.plants[this.plantIndex].known == true;
+    },
+    isKnownNull() {
+      return this.plants[this.plantIndex].known == null;
     },
   },
   methods: {
@@ -54,12 +69,18 @@ export default {
 
       this.plantIndex++;
     },
+    markAsKnown() {
+      this.plants[this.plantIndex].known = true;
+    },
+    markAsUnknown() {
+      this.plants[this.plantIndex].known = false;
+    }
   },
   mounted() {
     this.plants = PlantsJson.plants
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
-      .map(({ value }) => value);
+      .map(({ value }) => ({ ...value, known: null }));
   },
 };
 </script>
@@ -70,10 +91,7 @@ export default {
       <button @click="navBarActive = 0">Llista</button>
       <button @click="navBarActive = 1">Visum</button>
       <button @click="navBarActive = 2">[tercer]</button>
-      <span
-        id="nav-select-color"
-        :class="navBarActive == 0 ? '' : navBarActive == 1 ? 'second' : 'third'"
-      ></span>
+      <span id="nav-select-color" :class="navBarActive == 0 ? '' : navBarActive == 1 ? 'second' : 'third'"></span>
     </div>
     <h1 id="title">
       <span>v</span><span>i</span><span>s</span><span>u</span><span>m</span>
@@ -82,43 +100,56 @@ export default {
 
   <main v-if="plants.length != 0">
     <div class="lista" v-show="navBarActive == 0">
-      <h1>LLISTA</h1>
+      <div class="plantes-conegudes">
+        <h2 class="title">Plantes conegudes</h2>
+        <ul>
+          <li v-for="plant in knownPlants" :key="plant.nom">
+            {{ plant.nom }}
+          </li>
+        </ul>
+      </div>
+      <div class="plantes-desconegudes">
+        <h2 class="title">Plantes desconegudes</h2>
+        <ul>
+          <li v-for="plant in unknownPlants" :key="plant.nom">
+            {{ plant.nom }}
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="visum" v-show="navBarActive == 1">
       <div class="card">
         <Carousel @prevImage="prevImage" @nextImage="nextImage">
-          <CarouselSlide
-            v-for="(imatge, index) in plants[plantIndex].imatges"
-            :key="imatge"
-            :index="index"
-            :visibleSlide="visibleSlide"
-            :style="{ 'background-image': 'url(' + imatge + ')' }"
-          >
+          <CarouselSlide v-for="(imatge, index) in plants[plantIndex].imatges" :key="imatge" :index="index"
+            :visibleSlide="visibleSlide" :style="{ 'background-image': 'url(' + imatge + ')' }">
           </CarouselSlide>
         </Carousel>
         <transition name="info-card">
           <div class="info-card" v-show="displayInfo">
-            <div class="info-group">
-              <h2 class="info-title">Nom</h2>
-              <p>
-                <em>{{ plants[plantIndex].nom }}</em>
-              </p>
+            <div class="info-card-info">
+              <div class="info-group">
+                <h2 class="info-title">Nom</h2>
+                <p>
+                  <em>{{ plants[plantIndex].nom }}</em>
+                </p>
+              </div>
+              <div class="info-group">
+                <h2 class="info-title">Classificació</h2>
+                <p>
+                  <em>{{ plants[plantIndex].classificacio }}</em>
+                </p>
+              </div>
+              <div class="info-group">
+                <h2 class="info-title">Característiques</h2>
+                <p v-for="carac in plants[plantIndex].caracteristiques" :key="carac">
+                  {{ carac }}
+                </p>
+              </div>
             </div>
-            <div class="info-group">
-              <h2 class="info-title">Classificació</h2>
-              <p>
-                <em>{{ plants[plantIndex].classificacio }}</em>
-              </p>
-            </div>
-            <div class="info-group">
-              <h2 class="info-title">Característiques</h2>
-              <p
-                v-for="carac in plants[plantIndex].caracteristiques"
-                :key="carac"
-              >
-                {{ carac }}
-              </p>
+            <div class="info-card-buttons">
+              <button @click="markAsKnown" v-if="!isThisPlantKnown || isKnownNull">Marcar com coneguda</button>
+              <button @click="markAsUnknown" v-if="isThisPlantKnown || isKnownNull">Marcar com desconeguda</button>
             </div>
           </div>
         </transition>
@@ -246,18 +277,73 @@ main {
   height: 100%;
 }
 
+.lista {
+  display: inline-block;
+}
+
+.lista>* {
+  width: 100%;
+  height: 50%;
+  max-height: 50%;
+  overflow-y: auto;
+}
+
+.plantes-conegudes>.title,
+.plantes-desconegudes>.title {
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-color);
+}
+
+.lista .title {
+  font-size: 1.2rem;
+  padding: .5rem .8rem;
+}
+
+.lista ul li:not(:last-child) {
+  margin-bottom: .2rem;
+}
+
 .info-card {
   background-color: var(--secondary-color);
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
+  text-align: center;
+}
+
+.info-card-info {
+  height: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  text-align: center;
+}
+
+.info-card-buttons {
+  width: 100%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: underline;
+}
+
+.info-card-buttons> :only-child {
+  grid-column: 1/-1;
+}
+
+.info-card-buttons button {
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  transition: font 0.2s, color 0.2s;
+  width: 100%;
+  height: 100%;
 }
 
 .info-title {
