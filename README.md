@@ -1,29 +1,28 @@
-# Visum
+# Visum 🍀  #WorkInProgress
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is done to help my girlfriend (and her classmates) study for a botany test at university.
 
-## Recommended IDE Setup
+It's a plant carousel with images and info.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+## Project status 
 
-## Customize configuration
+### What can you do atm: 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. You can move through all the plants and see their photos and information.
+
+### What you will be able to do:
+
+1. Add each plant to a list of known and unknown plants.
+2. See that list in a new tab.
+
+## Technology
+
+Project created with: VueJS.
+Mainly designed to be used on your phone.
 
 ## Project Setup
 
-```sh
+```
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
