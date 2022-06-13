@@ -95,10 +95,12 @@ export default {
     },
     markAsKnown() {
       this.filteredPlants[this.APP_STATUS.plantIndex].known = true;
+      this.displayInfo = false;
       this.updateLocalStorage();
     },
     markAsUnknown() {
       this.filteredPlants[this.APP_STATUS.plantIndex].known = false;
+      this.displayInfo = false;
       this.updateLocalStorage();
     },
     updateLocalStorage() {
@@ -114,8 +116,10 @@ export default {
       this.APP_STATUS.visumConfig = local.visumConfig;
       this.APP_STATUS.plantIndex = local.plantIndex;
     } else {
-      this.APP_STATUS.plants = PlantsJson.plants
-        .map((value) => ({ value, sort: Math.random() }))
+      this.APP_STATUS.plants = PlantsJson.map((value) => ({
+        value,
+        sort: Math.random(),
+      }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => ({ ...value, known: null }));
 

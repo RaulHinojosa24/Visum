@@ -1,28 +1,1855 @@
-{
-    "plants": [
-        {
-            "nom": "Polystichum setiferum",
-            "classificacio": "Pteridophyta",
-            "caracteristiques": [
-                "Bipinnaticomposta"
-            ],
-            "imatges": [
-                "/imatges/polystichum_setiferum/imatge1.jpg",
-                "/imatges/polystichum_setiferum/imatge2.jpg",
-                "/imatges/polystichum_setiferum/imatge3.jpg"
-            ]
-        },
-        {
-            "nom": "Pinus halepensis",
-            "classificacio": "Pinus",
-            "caracteristiques": [
-                "Hace polen xd"
-            ],
-            "imatges": [
-                "/imatges/pinus_halepensis/imatge1.jpg",
-                "/imatges/pinus_halepensis/imatge2.jpg",
-                "/imatges/pinus_halepensis/imatge3.jpg"
-            ]
-        }
-    ]
-}
+[
+    {
+        "nom": "Nostoc sp.",
+        "classificacio": "Cianobacteri",
+        "caracteristiques": [
+            "Heterocists"
+        ],
+        "imatges": [
+            "/imatges/nostoc_sp/imatge1.jpg",
+            "/imatges/nostoc_sp/imatge2.jpg"
+        ]
+    },
+    {
+        "nom": "Oscillatoria sp.",
+        "classificacio": "Cianobacteri",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/oscillatoria_sp/imatge1.jpg",
+            "/imatges/oscillatoria_sp/imatge2.jpg",
+            "/imatges/oscillatoria_sp/imatge3.jpg",
+            "/imatges/oscillatoria_sp/osci.jpeg"
+        ]
+    },
+    {
+        "nom": "Rivularia sp.",
+        "classificacio": "Cianobacteri",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/rivularia_sp/imatge1.jpg",
+            "/imatges/rivularia_sp/rivu.jpg",
+            "/imatges/rivularia_sp/rivu2.png"
+        ]
+    },
+    {
+        "nom": "Jania sp.",
+        "classificacio": "Rodòfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/jania_sp/imatge1.jpg",
+            "/imatges/jania_sp/imatge2.jpg",
+            "/imatges/jania_sp/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Rissoella verruculosa",
+        "classificacio": "Rodòfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/rissoella_verruculosa/imatge1.jpg",
+            "/imatges/rissoella_verruculosa/imatge2.jpg",
+            "/imatges/rissoella_verruculosa/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Cystoseira sp.",
+        "classificacio": "Heterocont",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/cystoseira_sp/cisto.jpg",
+            "/imatges/cystoseira_sp/imatge1.jpg",
+            "/imatges/cystoseira_sp/imatge2.jpg",
+            "/imatges/cystoseira_sp/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Diatomees cèntriques",
+        "classificacio": "Heterocont",
+        "caracteristiques": [
+            "Simetria radial"
+        ],
+        "imatges": [
+            "/imatges/diatomees_centriques/centr.jpg",
+            "/imatges/diatomees_centriques/centr1.jpg",
+            "/imatges/diatomees_centriques/imatge2.jpg",
+            "/imatges/diatomees_centriques/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Dictyota dichotoma",
+        "classificacio": "Heterocont",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/dictyota_dichotoma/imatge1.jpg",
+            "/imatges/dictyota_dichotoma/imatge2.jpg",
+            "/imatges/dictyota_dichotoma/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Diatomees pennades",
+        "classificacio": "Heterocont",
+        "caracteristiques": [
+            "Simetria bilateral"
+        ],
+        "imatges": [
+            "/imatges/diatomees_pennades/imatge1.jpg",
+            "/imatges/diatomees_pennades/imatge2.jpg",
+            "/imatges/diatomees_pennades/penna.jpeg",
+            "/imatges/diatomees_pennades/penna1.jpg"
+        ]
+    },
+    {
+        "nom": "Cladophora sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/cladophora_sp/clado.jpg",
+            "/imatges/cladophora_sp/clado1.jpg",
+            "/imatges/cladophora_sp/imatge1.jpg",
+            "/imatges/cladophora_sp/imatge2.jpg",
+            "/imatges/cladophora_sp/imatge3.jpg",
+            "/imatges/cladophora_sp/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Closterium sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/closterium_sp/imatge1.jpg",
+            "/imatges/closterium_sp/imatge2.jpg",
+            "/imatges/closterium_sp/imatge3.jpg",
+            "/imatges/closterium_sp/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Codium sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/codium_sp/imatge1.jpg",
+            "/imatges/codium_sp/imatge2.jpg",
+            "/imatges/codium_sp/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Cosmarium sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/cosmarium_sp/imatge1.jpg",
+            "/imatges/cosmarium_sp/imatge2.jpg",
+            "/imatges/cosmarium_sp/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Spirogyra sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/spirogyra_sp/imatge1.jpg",
+            "/imatges/spirogyra_sp/imatge2.jpg",
+            "/imatges/spirogyra_sp/imatge3.jpg"
+        ]
+    },
+    {
+        "nom": "Ulothrix sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/ulothrix_sp/imatge1.jpg",
+            "/imatges/ulothrix_sp/imatge2.jpg",
+            "/imatges/ulothrix_sp/imatge3.jpg",
+            "/imatges/ulothrix_sp/ulo.jpg"
+        ]
+    },
+    {
+        "nom": "Ulva sp.",
+        "classificacio": "Cloròfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/ulva_sp/imatge1.jpg",
+            "/imatges/ulva_sp/imatge2.jpg",
+            "/imatges/ulva_sp/imatge3.jpg",
+            "/imatges/ulva_sp/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Hepàtiques tal·loses",
+        "classificacio": "Briòfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/hepatiques_talloses/talo.jpg",
+            "/imatges/hepatiques_talloses/talo1.jpg",
+            "/imatges/hepatiques_talloses/talo2.JPG",
+            "/imatges/hepatiques_talloses/talo3.jpg"
+        ]
+    },
+    {
+        "nom": "Hepàtiques folioses",
+        "classificacio": "Briòfit",
+        "caracteristiques": [
+            "Amb fil·lidis"
+        ],
+        "imatges": [
+            "/imatges/hepatiques_folioses/foli.jpeg",
+            "/imatges/hepatiques_folioses/foli2.jpg",
+            "/imatges/hepatiques_folioses/foli3.jpg"
+        ]
+    },
+    {
+        "nom": "Molses acrocàrpiques",
+        "classificacio": "Briòfit",
+        "caracteristiques": [
+            "Espròfit surt de l'àpex"
+        ],
+        "imatges": [
+            "/imatges/molses_acrocarpiques/acro.png",
+            "/imatges/molses_acrocarpiques/acro1.jpg",
+            "/imatges/molses_acrocarpiques/acro2.jpg"
+        ]
+    },
+    {
+        "nom": "Molses pleourocàrpiques",
+        "classificacio": "Briòfit",
+        "caracteristiques": [
+            "Esporòfit surt lateralment"
+        ],
+        "imatges": [
+            "/imatges/molses_pleourocarpiques/pleuro.jpg",
+            "/imatges/molses_pleourocarpiques/pleuro1.png"
+        ]
+    },
+    {
+        "nom": "Adiantum capillus-veneris",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [
+            "Amb pseudo indusi"
+        ],
+        "imatges": [
+            "/imatges/adiantum_capillus-veneris/imatge1.jpg",
+            "/imatges/adiantum_capillus-veneris/imatge2.jpg",
+            "/imatges/adiantum_capillus-veneris/imatge3.jpg",
+            "/imatges/adiantum_capillus-veneris/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Asplenium trichomanes",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [
+            "Pinnaticomposta"
+        ],
+        "imatges": [
+            "/imatges/asplenium_trichomanes/imatge1.jpg",
+            "/imatges/asplenium_trichomanes/imatge2.jpg",
+            "/imatges/asplenium_trichomanes/imatge3.jpg",
+            "/imatges/asplenium_trichomanes/imatge4.jpg",
+            "/imatges/asplenium_trichomanes/imatge5.jpg",
+            "/imatges/asplenium_trichomanes/imatge6.JPG"
+        ]
+    },
+    {
+        "nom": "Blechnum spicant",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [
+            "Amb esporofil·les"
+        ],
+        "imatges": [
+            "/imatges/blechnum_spicant/imatge1.jpg",
+            "/imatges/blechnum_spicant/imatge2.jpg",
+            "/imatges/blechnum_spicant/imatge3.jpg",
+            "/imatges/blechnum_spicant/imatge4.jpg",
+            "/imatges/blechnum_spicant/imatge5.jpg"
+        ]
+    },
+    {
+        "nom": "Ceterach officinarum",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [
+            "Segments ovals i alterns"
+        ],
+        "imatges": [
+            "/imatges/ceterach_officinarum/imatge1.jpg",
+            "/imatges/ceterach_officinarum/imatge2.jpg",
+            "/imatges/ceterach_officinarum/imatge3.jpg",
+            "/imatges/ceterach_officinarum/imatge4.jpg",
+            "/imatges/ceterach_officinarum/imatge5.jpg",
+            "/imatges/ceterach_officinarum/imatge6.JPG"
+        ]
+    },
+    {
+        "nom": "Polypodium sp.",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/polypodium_sp/imatge1.jpg",
+            "/imatges/polypodium_sp/imatge2.jpg",
+            "/imatges/polypodium_sp/imatge3.jpg",
+            "/imatges/polypodium_sp/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Selaginella denticulata",
+        "classificacio": "Criptògama vascular",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/selaginella_denticulata/imatge1.jpg",
+            "/imatges/selaginella_denticulata/imatge2.jpg",
+            "/imatges/selaginella_denticulata/imatge3.jpg",
+            "/imatges/selaginella_denticulata/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Cycas revoluta",
+        "classificacio": "Gimnosperma, Cycadopsida",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/cycas_revoluta/imatge1.jpg",
+            "/imatges/cycas_revoluta/imatge2.jpg",
+            "/imatges/cycas_revoluta/imatge3.jpg",
+            "/imatges/cycas_revoluta/imatge4.jpg",
+            "/imatges/cycas_revoluta/imatge5.PNG"
+        ]
+    },
+    {
+        "nom": "Cupressus sempervirens",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Fulles esquamiformes"
+        ],
+        "imatges": [
+            "/imatges/cupressus_sempervirens/imatge1.jpg",
+            "/imatges/cupressus_sempervirens/imatge2.jpg",
+            "/imatges/cupressus_sempervirens/imatge3.jpg",
+            "/imatges/cupressus_sempervirens/imatge4.jpg",
+            "/imatges/cupressus_sempervirens/imatge5.jpg"
+        ]
+    },
+    {
+        "nom": "Juniperus oxycedrus",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Dues ratlles blanques a l'envers de la fulla",
+            "Galbuls vermellosos"
+        ],
+        "imatges": [
+            "/imatges/juniperus_oxycedrus/imatge1.jpg",
+            "/imatges/juniperus_oxycedrus/imatge2.JPG",
+            "/imatges/juniperus_oxycedrus/imatge3.jpg",
+            "/imatges/juniperus_oxycedrus/imatge4.jpg",
+            "/imatges/juniperus_oxycedrus/imatge6.jpg",
+            "/imatges/juniperus_oxycedrus/imatge7.jpg",
+            "/imatges/juniperus_oxycedrus/imatge8.jpg",
+            "/imatges/juniperus_oxycedrus/imatge9.jpg"
+        ]
+    },
+    {
+        "nom": "Juniperus phoenicea",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Galbuls vermell fosc formats per més de 6 esquames",
+            "Fulles esquamiformes"
+        ],
+        "imatges": [
+            "/imatges/juniperus_phoenicea/imatge1.jpg",
+            "/imatges/juniperus_phoenicea/imatge2.jpg",
+            "/imatges/juniperus_phoenicea/imatge4.jpg",
+            "/imatges/juniperus_phoenicea/imatge5.jpg",
+            "/imatges/juniperus_phoenicea/imatge6.PNG"
+        ]
+    },
+    {
+        "nom": "Asphodelus fistulosus",
+        "classificacio": "Angiosperma, Liliaceae",
+        "caracteristiques": [
+            "Tèpals petaloides"
+        ],
+        "imatges": [
+            "/imatges/asphodelus_fistulosus/imatge1.jpg",
+            "/imatges/asphodelus_fistulosus/imatge2.jpg",
+            "/imatges/asphodelus_fistulosus/imatge3.jpg",
+            "/imatges/asphodelus_fistulosus/imatge4.jpg",
+            "/imatges/asphodelus_fistulosus/imatge5.JPG",
+            "/imatges/asphodelus_fistulosus/imatge6.jpg",
+            "/imatges/asphodelus_fistulosus/imatge7.JPG"
+        ]
+    },
+    {
+        "nom": "Avena sp.",
+        "classificacio": "Angiosperma, Poaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/avena_sp/imatge1.jpg",
+            "/imatges/avena_sp/imatge2.jpg",
+            "/imatges/avena_sp/imatge3.jpg",
+            "/imatges/avena_sp/imatge4.jpg"
+        ]
+    },
+    {
+        "nom": "Bellis perennis",
+        "classificacio": "Angiosperma, Asteraceae",
+        "caracteristiques": [
+            "Composta",
+            "Lígules blanques, a vegades roses"
+        ],
+        "imatges": [
+            "/imatges/bellis_perennis/belli.jpg",
+            "/imatges/bellis_perennis/belli1.jpg",
+            "/imatges/bellis_perennis/belli2.jpg",
+            "/imatges/bellis_perennis/belli3.jpg"
+        ]
+    },
+    {
+        "nom": "Galactites tomentosa",
+        "classificacio": "Angiosperma, Asteraceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/galactites_tomentosa/galac.jpg",
+            "/imatges/galactites_tomentosa/galac1.jpg",
+            "/imatges/galactites_tomentosa/galac2.jpg",
+            "/imatges/galactites_tomentosa/galac3.jpg",
+            "/imatges/galactites_tomentosa/galac4.jpg"
+        ]
+    },
+    {
+        "nom": "Hirschfeldia incana",
+        "classificacio": "Angiosperma, Brassicaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/hirschfeldia_incana/hir.jpg",
+            "/imatges/hirschfeldia_incana/hir1.jpg",
+            "/imatges/hirschfeldia_incana/hir2.jpg",
+            "/imatges/hirschfeldia_incana/hir3.jpg"
+        ]
+    },
+    {
+        "nom": "Lathyrus sp.",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Amb circells",
+            "Fulles paral·lelinervies"
+        ],
+        "imatges": [
+            "/imatges/lathyrus_sp/lathy.jpg",
+            "/imatges/lathyrus_sp/lathy1.jpg",
+            "/imatges/lathyrus_sp/lathy2.jpg",
+            "/imatges/lathyrus_sp/lathy3.jpg",
+            "/imatges/lathyrus_sp/lathy4.jpg"
+        ]
+    },
+    {
+        "nom": "Rosa sp.",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Pinnaticomposta",
+            "5 pètals",
+            "Estams infinits"
+        ],
+        "imatges": [
+            "/imatges/rosa_sp/rosa.jpg",
+            "/imatges/rosa_sp/rosa1.jpg",
+            "/imatges/rosa_sp/rosa2.jpg",
+            "/imatges/rosa_sp/rosa3.jpg",
+            "/imatges/rosa_sp/rosa4.jpg"
+        ]
+    },
+    {
+        "nom": "Rosmarinus officinalis",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/rosmarinus_officinalis/rosmar.jpg",
+            "/imatges/rosmarinus_officinalis/rosmar1.jpg",
+            "/imatges/rosmarinus_officinalis/rosmar2.jpg",
+            "/imatges/rosmarinus_officinalis/rosmar3.jpg"
+        ]
+    },
+    {
+        "nom": "Rubus sp.",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Fulla palmaticomposta",
+            "Pentafoliada",
+            "Amb aculis"
+        ],
+        "imatges": [
+            "/imatges/rubus_sp/rubussp.jpg",
+            "/imatges/rubus_sp/rubussp2.jpg",
+            "/imatges/rubus_sp/rubussp4.jpg"
+        ]
+    },
+    {
+        "nom": "Salvia verbenaca",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [
+            "Flors liles en verticils"
+        ],
+        "imatges": [
+            "/imatges/salvia_verbenaca/salvia.jpg",
+            "/imatges/salvia_verbenaca/salvia2.jpg",
+            "/imatges/salvia_verbenaca/salvia3.JPG",
+            "/imatges/salvia_verbenaca/salvia4.jpg"
+        ]
+    },
+    {
+        "nom": "Spartium junceum",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Fulla simple"
+        ],
+        "imatges": [
+            "/imatges/spartium_junceum/spart.jpg",
+            "/imatges/spartium_junceum/spart1.jpg",
+            "/imatges/spartium_junceum/spart2.jpg",
+            "/imatges/spartium_junceum/spart3.jpg",
+            "/imatges/spartium_junceum/spart4.jpg"
+        ]
+    },
+    {
+        "nom": "Stachys ocymastrum",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [
+            "Flors blanques en verticils"
+        ],
+        "imatges": [
+            "/imatges/stachys_ocymastrum/stachys.jpg",
+            "/imatges/stachys_ocymastrum/stachys1.jpg",
+            "/imatges/stachys_ocymastrum/stachys2.jpg",
+            "/imatges/stachys_ocymastrum/stachys3.jpg",
+            "/imatges/stachys_ocymastrum/stachys4.jpg"
+        ]
+    },
+    {
+        "nom": "Urospermum dalechampii",
+        "classificacio": "Angiosperma, Acteraceae",
+        "caracteristiques": [
+            "Composta liguliflora"
+        ],
+        "imatges": [
+            "/imatges/urospermum_dalechampii/uros.jpg",
+            "/imatges/urospermum_dalechampii/uros1.jpg",
+            "/imatges/urospermum_dalechampii/uros2.jpg",
+            "/imatges/urospermum_dalechampii/uros3.JPG"
+        ]
+    },
+    {
+        "nom": "Vicia sp.",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/vicia_sp/vicia.jpg",
+            "/imatges/vicia_sp/vicia1.jpg",
+            "/imatges/vicia_sp/vicia2.jpg"
+        ]
+    },
+    {
+        "nom": "Asplenium onopteris",
+        "classificacio": "Pteridòfit",
+        "caracteristiques": [
+            "2-3 pinnaticomposta"
+        ],
+        "imatges": [
+            "/imatges/asplenium_onopteris/onop.jpg",
+            "/imatges/asplenium_onopteris/onop2.jpg",
+            "/imatges/asplenium_onopteris/onop3.JPG"
+        ]
+    },
+    {
+        "nom": "Equisetum sp.",
+        "classificacio": "Pteridòfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/equisetum_sp/equis.jpg",
+            "/imatges/equisetum_sp/equis1.jpeg",
+            "/imatges/equisetum_sp/equis2.jpg",
+            "/imatges/equisetum_sp/equis3.jpg"
+        ]
+    },
+    {
+        "nom": "Polystichum setiferum",
+        "classificacio": "Pteridòfit",
+        "caracteristiques": [
+            "Bipinnaticomposta"
+        ],
+        "imatges": [
+            "/imatges/polystichum_setiferum/seti.jpg",
+            "/imatges/polystichum_setiferum/seti1.jpg",
+            "/imatges/polystichum_setiferum/seti2.jpg",
+            "/imatges/polystichum_setiferum/seti3.jpg",
+            "/imatges/polystichum_setiferum/seti4.jpg",
+            "/imatges/polystichum_setiferum/seti5.JPG"
+        ]
+    },
+    {
+        "nom": "Pteridium aquilinum",
+        "classificacio": "Pteridòfit",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/pteridium_aquilinum/aqui.jpg",
+            "/imatges/pteridium_aquilinum/aqui1.jpg",
+            "/imatges/pteridium_aquilinum/aqui2.jpg",
+            "/imatges/pteridium_aquilinum/aqui3.jpg"
+        ]
+    },
+    {
+        "nom": "Abies alba",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Fulles linears, dues linees blanques al revers"
+        ],
+        "imatges": [
+            "/imatges/abies_alba/abies.jpg",
+            "/imatges/abies_alba/abies1.jpg",
+            "/imatges/abies_alba/abies2.PNG",
+            "/imatges/abies_alba/abies3.jpg"
+        ]
+    },
+    {
+        "nom": "Cedrus sp.",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Les pinyes es desmonten"
+        ],
+        "imatges": [
+            "/imatges/cedrus_sp/cedrus.jpg",
+            "/imatges/cedrus_sp/cedrus1.jpg",
+            "/imatges/cedrus_sp/cedrus2.jpg",
+            "/imatges/cedrus_sp/cedrus3.jpg",
+            "/imatges/cedrus_sp/cedrus4.PNG"
+        ]
+    },
+    {
+        "nom": "Ginkgo biloba",
+        "classificacio": "Gimnosperma, Ginkgopsida",
+        "caracteristiques": [
+            "Fulla flaveliforme"
+        ],
+        "imatges": [
+            "/imatges/ginkgo_biloba/gink.jpg",
+            "/imatges/ginkgo_biloba/gink1.jpg",
+            "/imatges/ginkgo_biloba/gink2.PNG"
+        ]
+    },
+    {
+        "nom": "Juniperus communis",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Una ratlla blanca a l'envers de la fulla",
+            "Galbuls blavosos"
+        ],
+        "imatges": [
+            "/imatges/juniperus_communis/juni.jpg",
+            "/imatges/juniperus_communis/juni1.jpg",
+            "/imatges/juniperus_communis/juni2.jpg",
+            "/imatges/juniperus_communis/juni3.jpg"
+        ]
+    },
+    {
+        "nom": "Picea abies",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Fulla simple, linear",
+            "Pinyes cap avall"
+        ],
+        "imatges": [
+            "/imatges/picea_abies/picea.jpg",
+            "/imatges/picea_abies/picea2.jpg",
+            "/imatges/picea_abies/picea3.jpg"
+        ]
+    },
+    {
+        "nom": "Pinus halepensis",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Pinyes joves vermelles, pinyes madures grises"
+        ],
+        "imatges": [
+            "/imatges/pinus_halepensis/halep.jpg",
+            "/imatges/pinus_halepensis/halep1.jpg",
+            "/imatges/pinus_halepensis/halep2.jpg",
+            "/imatges/pinus_halepensis/halep3.jpg"
+        ]
+    },
+    {
+        "nom": "Pinus mugo subsp. uncinata",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Pinyes amb apòfisis molt marcades, en forma d'ahm"
+        ],
+        "imatges": [
+            "/imatges/pinus_mugo_subsp_uncinata/unci.jpg",
+            "/imatges/pinus_mugo_subsp_uncinata/unci1.jpg",
+            "/imatges/pinus_mugo_subsp_uncinata/unci2.jpg",
+            "/imatges/pinus_mugo_subsp_uncinata/unci3.jpg"
+        ]
+    },
+    {
+        "nom": "Pinus nigra subsp. salzmanii",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Pinya ocre pàl·lid a l'exterior i negre a l'interior"
+        ],
+        "imatges": [
+            "/imatges/pinus_nigra_subsp_salzmanii/salz.jpg",
+            "/imatges/pinus_nigra_subsp_salzmanii/salz2.jpg",
+            "/imatges/pinus_nigra_subsp_salzmanii/salz3.jpg",
+            "/imatges/pinus_nigra_subsp_salzmanii/salz4.jpg"
+        ]
+    },
+    {
+        "nom": "Pinus pinaster",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Pinyes molt grans"
+        ],
+        "imatges": [
+            "/imatges/pinus_pinaster/pinaster.jpg",
+            "/imatges/pinus_pinaster/pinaster1.jpg",
+            "/imatges/pinus_pinaster/pinaster2.jpg",
+            "/imatges/pinus_pinaster/pinaster3.jpg"
+        ]
+    },
+    {
+        "nom": "Pinus pinea",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Pinyons"
+        ],
+        "imatges": [
+            "/imatges/pinus_pinea/pinea.jpg",
+            "/imatges/pinus_pinea/pinea1.jpg",
+            "/imatges/pinus_pinea/pinea2.jpg",
+            "/imatges/pinus_pinea/pinea3.PNG",
+            "/imatges/pinus_pinea/pinea4.PNG"
+        ]
+    },
+    {
+        "nom": "Pinus sylvestris",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Escorça taronjosa",
+            "Pinyes petites"
+        ],
+        "imatges": [
+            "/imatges/pinus_sylvestris/sylv.jpg",
+            "/imatges/pinus_sylvestris/sylv2.jpg",
+            "/imatges/pinus_sylvestris/sylv3.jpg"
+        ]
+    },
+    {
+        "nom": "Taxus baccata",
+        "classificacio": "Gimnosperma, Coniferopsida",
+        "caracteristiques": [
+            "Sembla un avet però no ho és",
+            "Nom fruit: aril"
+        ],
+        "imatges": [
+            "/imatges/taxus_baccata/tax.jpg",
+            "/imatges/taxus_baccata/tax1.jpg",
+            "/imatges/taxus_baccata/tax2.jpg",
+            "/imatges/taxus_baccata/tax3.jpg",
+            "/imatges/taxus_baccata/tax54.jpg"
+        ]
+    },
+    {
+        "nom": "Acanthus mollis",
+        "classificacio": "Angiosperma, Acanthaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/acanthus_mollis/acant.jpg",
+            "/imatges/acanthus_mollis/acant1.jpg",
+            "/imatges/acanthus_mollis/acant2.jpg",
+            "/imatges/acanthus_mollis/acant3.jpg"
+        ]
+    },
+    {
+        "nom": "Acer opalus",
+        "classificacio": "Angiosperma, Rutaceae",
+        "caracteristiques": [
+            "Fulles amb 5 l'obuls"
+        ],
+        "imatges": [
+            "/imatges/acer_opalus/acer.jpg",
+            "/imatges/acer_opalus/acer1.jpg",
+            "/imatges/acer_opalus/acer2.jpg",
+            "/imatges/acer_opalus/acer3.jpg"
+        ]
+    },
+    {
+        "nom": "Ailanthus altissima",
+        "classificacio": "Angiosperma, Anacardiaceae",
+        "caracteristiques": [
+            "Invasora"
+        ],
+        "imatges": [
+            "/imatges/ailanthus_altissima/ailan.jpg",
+            "/imatges/ailanthus_altissima/ailan1.jpg",
+            "/imatges/ailanthus_altissima/ailan3.jpg",
+            "/imatges/ailanthus_altissima/ailan4.jpg",
+            "/imatges/ailanthus_altissima/ailan5.JPG"
+        ]
+    },
+    {
+        "nom": "Ajuga reptans",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/ajuga_reptans/aju.jpg",
+            "/imatges/ajuga_reptans/aju1.jpg",
+            "/imatges/ajuga_reptans/aju2.jpg",
+            "/imatges/ajuga_reptans/aju3.jpg"
+        ]
+    },
+    {
+        "nom": "Alnus glutinosa",
+        "classificacio": "Angiosperma, Betulaceae",
+        "caracteristiques": [
+            "Escotadura a la part de dalt de la fulla"
+        ],
+        "imatges": [
+            "/imatges/alnus_glutinosa/alnus.jpg",
+            "/imatges/alnus_glutinosa/alnus1.jpg",
+            "/imatges/alnus_glutinosa/alnus2.jpg",
+            "/imatges/alnus_glutinosa/alnus3.jpg"
+        ]
+    },
+    {
+        "nom": "Aloe sp.",
+        "classificacio": "Angiosperma, Liliaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/aloe_sp/aloe.jpg",
+            "/imatges/aloe_sp/aloe1.jpg",
+            "/imatges/aloe_sp/aloe2.jpg",
+            "/imatges/aloe_sp/aloe3.jpg"
+        ]
+    },
+    {
+        "nom": "Aquilegia vulgaris",
+        "classificacio": "Angiosperma, Ranunculaceae",
+        "caracteristiques": [
+            "Tèpals petaloides"
+        ],
+        "imatges": [
+            "/imatges/aquilegia_vulgaris/aqui.jpg",
+            "/imatges/aquilegia_vulgaris/aqui1.jpg",
+            "/imatges/aquilegia_vulgaris/aqui2.jpg",
+            "/imatges/aquilegia_vulgaris/aqui3.jpg"
+        ]
+    },
+    {
+        "nom": "Arbutus unedo",
+        "classificacio": "Angiosperma, Ericaceae",
+        "caracteristiques": [
+            "Fulla asserrada"
+        ],
+        "imatges": [
+            "/imatges/arbutus_unedo/uned.jpg",
+            "/imatges/arbutus_unedo/uned1.jpg",
+            "/imatges/arbutus_unedo/uned2.jpg",
+            "/imatges/arbutus_unedo/uned3.jpg"
+        ]
+    },
+    {
+        "nom": "Arundo donax",
+        "classificacio": "Angiosperma, Poaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/arundo_donax/donax.jpg",
+            "/imatges/arundo_donax/donax1.jpg",
+            "/imatges/arundo_donax/donax2.jpg",
+            "/imatges/arundo_donax/donax3.jpg"
+        ]
+    },
+    {
+        "nom": "Asparagus officinalis",
+        "classificacio": "Angiosperma, Liliaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/asparagus_officinalis/asp.jpg",
+            "/imatges/asparagus_officinalis/asp1.jpg",
+            "/imatges/asparagus_officinalis/asp2.jpg",
+            "/imatges/asparagus_officinalis/asp3.jpg"
+        ]
+    },
+    {
+        "nom": "Borago officinalis",
+        "classificacio": "Angiosperma, Boraginaceae",
+        "caracteristiques": [
+            "Cima escorpioide"
+        ],
+        "imatges": [
+            "/imatges/borago_officinalis/borag.jpg",
+            "/imatges/borago_officinalis/borag2.jpg",
+            "/imatges/borago_officinalis/borag3.jpg",
+            "/imatges/borago_officinalis/borag4.jpg",
+            "/imatges/borago_officinalis/borag5.jpg"
+        ]
+    },
+    {
+        "nom": "Calicotome spinosa",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Espines caulinars",
+            "Fulles compostes trifoliades"
+        ],
+        "imatges": [
+            "/imatges/calicotome_spinosa/calic.jpg",
+            "/imatges/calicotome_spinosa/calic1.jpg",
+            "/imatges/calicotome_spinosa/calic2.jpg",
+            "/imatges/calicotome_spinosa/calic3.jpg"
+        ]
+    },
+    {
+        "nom": "Castanea sativa",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/castanea_sativa/casta.jpg",
+            "/imatges/castanea_sativa/casta1.jpg",
+            "/imatges/castanea_sativa/casta2.jpg",
+            "/imatges/castanea_sativa/casta3.jpg",
+            "/imatges/castanea_sativa/casta4.jpg"
+        ]
+    },
+    {
+        "nom": "Ceratonia siliqua",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Fulla composta",
+            "Paripinnada",
+            "Garrofer"
+        ],
+        "imatges": [
+            "/imatges/ceratonia_siliqua/cera.jpg",
+            "/imatges/ceratonia_siliqua/cera1.jpg",
+            "/imatges/ceratonia_siliqua/cera2.jpg",
+            "/imatges/ceratonia_siliqua/cera3.jpg"
+        ]
+    },
+    {
+        "nom": "Chamaerops humilis",
+        "classificacio": "Angiosperma, Arecaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/chamaerops_humilis/chama.jpg",
+            "/imatges/chamaerops_humilis/chama1.jpg",
+            "/imatges/chamaerops_humilis/chama2.jpg"
+        ]
+    },
+    {
+        "nom": "Cistus albidus",
+        "classificacio": "Angiosperma, Cistaceae",
+        "caracteristiques": [
+            "Fulles blanques y oposades",
+            "Flor fucsia"
+        ],
+        "imatges": [
+            "/imatges/cistus_albidus/albi.jpg",
+            "/imatges/cistus_albidus/albi1.jpg",
+            "/imatges/cistus_albidus/albi2.jpg",
+            "/imatges/cistus_albidus/albi3.jpg"
+        ]
+    },
+    {
+        "nom": "Cistus monspeliensis",
+        "classificacio": "Angiosperma, Cistaceae",
+        "caracteristiques": [
+            "Flor blanca",
+            "Fulla més prima, nervis molt marcats"
+        ],
+        "imatges": [
+            "/imatges/cistus_monspeliensis/mons.jpg",
+            "/imatges/cistus_monspeliensis/mons1.jpg",
+            "/imatges/cistus_monspeliensis/mons2.jpg",
+            "/imatges/cistus_monspeliensis/mons3.jpg"
+        ]
+    },
+    {
+        "nom": "Cistus salviifolius",
+        "classificacio": "Angiosperma, Cistaceae",
+        "caracteristiques": [
+            "Flor blanca"
+        ],
+        "imatges": [
+            "/imatges/cistus_salviifolius/cist.jpg",
+            "/imatges/cistus_salviifolius/cist1.jpg",
+            "/imatges/cistus_salviifolius/cist2.jpg",
+            "/imatges/cistus_salviifolius/cist3.jpg",
+            "/imatges/cistus_salviifolius/cist4.jpg"
+        ]
+    },
+    {
+        "nom": "Clematis vitalba",
+        "classificacio": "Angiosperma, Ranunculaceae",
+        "caracteristiques": [
+            "Fulla oposada, composta, imparipinnada"
+        ],
+        "imatges": [
+            "/imatges/clematis_vitalba/clem.jpg",
+            "/imatges/clematis_vitalba/clem1.jpg",
+            "/imatges/clematis_vitalba/clem2.jpg",
+            "/imatges/clematis_vitalba/clem3.jpg",
+            "/imatges/clematis_vitalba/clem4.jpg",
+            "/imatges/clematis_vitalba/clem5.jpg"
+        ]
+    },
+    {
+        "nom": "Coronilla emerus",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Lleguminosa"
+        ],
+        "imatges": [
+            "/imatges/coronilla_emerus/coro.jpg",
+            "/imatges/coronilla_emerus/coro1.jpg",
+            "/imatges/coronilla_emerus/coro2.jpg",
+            "/imatges/coronilla_emerus/coro3.jpg",
+            "/imatges/coronilla_emerus/coro4.jpg"
+        ]
+    },
+    {
+        "nom": "Corylus avellana",
+        "classificacio": "Angiosperma, Betulaceae",
+        "caracteristiques": [
+            "Fulla serrrada amb lòbuls, doble dentació, base asimètrica, àpex amb punta"
+        ],
+        "imatges": [
+            "/imatges/corylus_avellana/ave.jpg",
+            "/imatges/corylus_avellana/ave1.jpg",
+            "/imatges/corylus_avellana/ave2.jpg",
+            "/imatges/corylus_avellana/ave3.jpg"
+        ]
+    },
+    {
+        "nom": "Crataegus monogyna",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Fulla simple, profundament lobulada"
+        ],
+        "imatges": [
+            "/imatges/crataegus_monogyna/crata.jpg",
+            "/imatges/crataegus_monogyna/crata1.jpg",
+            "/imatges/crataegus_monogyna/crata2.jpg",
+            "/imatges/crataegus_monogyna/crata3.jpg",
+            "/imatges/crataegus_monogyna/crata4.jpg"
+        ]
+    },
+    {
+        "nom": "Cytisus scoparius",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Fulla trifoliada",
+            "Tija estriada, pilosa",
+            "Estil i estams molt recargolats"
+        ],
+        "imatges": [
+            "/imatges/cytisus_scoparius/city.jpg",
+            "/imatges/cytisus_scoparius/city2.jpg",
+            "/imatges/cytisus_scoparius/city3.jpg"
+        ]
+    },
+    {
+        "nom": "Erica arborea",
+        "classificacio": "Angiosperma, Ericaceae",
+        "caracteristiques": [
+            "Flors blanquinoses",
+            "Tijes pubescents",
+            "Branquillons pilosos"
+        ],
+        "imatges": [
+            "/imatges/erica_arborea/arb.jpg",
+            "/imatges/erica_arborea/arb1.jpg",
+            "/imatges/erica_arborea/arb2.jpg",
+            "/imatges/erica_arborea/arb3.jpg"
+        ]
+    },
+    {
+        "nom": "Erica scoparia",
+        "classificacio": "Angiosperma, Ericaceae",
+        "caracteristiques": [
+            "Branquillons glabres",
+            "Inflorescència racemiforme"
+        ],
+        "imatges": [
+            "/imatges/erica_scoparia/scop.jpg",
+            "/imatges/erica_scoparia/scop1.jpg",
+            "/imatges/erica_scoparia/scop2.jpg",
+            "/imatges/erica_scoparia/scop3.jpg"
+        ]
+    },
+    {
+        "nom": "Eucalyptus sp.",
+        "classificacio": "Angiosperma, Myrtaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/eucalyptus_sp/euc3.jpg",
+            "/imatges/eucalyptus_sp/euca.jpg",
+            "/imatges/eucalyptus_sp/euca1.jpg",
+            "/imatges/eucalyptus_sp/euca2.jpg"
+        ]
+    },
+    {
+        "nom": "Euphorbia sp.",
+        "classificacio": "Angiosperma, Euphorbiaceae",
+        "caracteristiques": [
+            "Inflorescència tipus ciati"
+        ],
+        "imatges": [
+            "/imatges/euphorbia_sp/eup.jpg",
+            "/imatges/euphorbia_sp/eup1.jpg",
+            "/imatges/euphorbia_sp/eup2.jpg",
+            "/imatges/euphorbia_sp/eup3.jpg"
+        ]
+    },
+    {
+        "nom": "Fagus sylvatica",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [
+            "Vora de la fulla amb pèls, nervis paral·lels"
+        ],
+        "imatges": [
+            "/imatges/fagus_sylvatica/fag.jpg",
+            "/imatges/fagus_sylvatica/fag1.jpg",
+            "/imatges/fagus_sylvatica/fag2.JPG",
+            "/imatges/fagus_sylvatica/fag3.jpg",
+            "/imatges/fagus_sylvatica/fag4.jpg"
+        ]
+    },
+    {
+        "nom": "Ficus carica",
+        "classificacio": "Angiosperma, Moraceae",
+        "caracteristiques": [
+            "Amb infructescència tipus siconi"
+        ],
+        "imatges": [
+            "/imatges/ficus_carica/ficus.jpg",
+            "/imatges/ficus_carica/ficus1.jpg",
+            "/imatges/ficus_carica/ficus2.jpg",
+            "/imatges/ficus_carica/ficus3.jpg"
+        ]
+    },
+    {
+        "nom": "Foeniculum vulgare",
+        "classificacio": "Angiosperma, Apiaceae",
+        "caracteristiques": [
+            "Fonoll",
+            "Inflorescència umbel·liforme",
+            "Tija estriada amb costelles i solcs"
+        ],
+        "imatges": [
+            "/imatges/foeniculum_vulgare/fono.jpg",
+            "/imatges/foeniculum_vulgare/fono2.jpg",
+            "/imatges/foeniculum_vulgare/fono3.jpg",
+            "/imatges/foeniculum_vulgare/fono4.jpg"
+        ]
+    },
+    {
+        "nom": "Fragaria vesca",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/fragaria_vesca/frag.jpg",
+            "/imatges/fragaria_vesca/frag1.jpg",
+            "/imatges/fragaria_vesca/frag2.jpg",
+            "/imatges/fragaria_vesca/frag3.jpg"
+        ]
+    },
+    {
+        "nom": "Fraxinus angustifolia",
+        "classificacio": "Angiosperma, Oleaceae",
+        "caracteristiques": [
+            "Gemmes verdes"
+        ],
+        "imatges": [
+            "/imatges/fraxinus_angustifolia/angus.jpg",
+            "/imatges/fraxinus_angustifolia/angus1.jpg",
+            "/imatges/fraxinus_angustifolia/angus2.jpg",
+            "/imatges/fraxinus_angustifolia/angus3.jpg"
+        ]
+    },
+    {
+        "nom": "Fraxinus excelsior",
+        "classificacio": "Angiosperma, Oleaceae",
+        "caracteristiques": [
+            "Pinnaticomposta",
+            "Imparipinnada",
+            "Gemmes negres"
+        ],
+        "imatges": [
+            "/imatges/fraxinus_excelsior/frax.jpg",
+            "/imatges/fraxinus_excelsior/frax1.jpg",
+            "/imatges/fraxinus_excelsior/frax2.jpg",
+            "/imatges/fraxinus_excelsior/frax3.jpg",
+            "/imatges/fraxinus_excelsior/frax4.jpg",
+            "/imatges/fraxinus_excelsior/frax5.jpg"
+        ]
+    },
+    {
+        "nom": "Fumaria capreolata",
+        "classificacio": "Angiosperma, Papaveraceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/fumaria_capreolata/fuma.jpg",
+            "/imatges/fumaria_capreolata/fuma1.jpg",
+            "/imatges/fumaria_capreolata/fuma2.jpg",
+            "/imatges/fumaria_capreolata/fuma3.jpg"
+        ]
+    },
+    {
+        "nom": "Gallium sp.",
+        "classificacio": "Angiosperma, Rubiaceae",
+        "caracteristiques": [
+            "Verticils de 6-8 fulles"
+        ],
+        "imatges": [
+            "/imatges/gallium_sp/galium.jpg",
+            "/imatges/gallium_sp/galium1.jpg",
+            "/imatges/gallium_sp/galium2.jpg"
+        ]
+    },
+    {
+        "nom": "Geranium robertianum",
+        "classificacio": "Angiosperma, Geraniaceae",
+        "caracteristiques": [
+            "Composta pentafoliar"
+        ],
+        "imatges": [
+            "/imatges/geranium_robertianum/gera.jpg",
+            "/imatges/geranium_robertianum/gera1.jpg",
+            "/imatges/geranium_robertianum/gera2.jpg",
+            "/imatges/geranium_robertianum/gera3.jpg",
+            "/imatges/geranium_robertianum/gera4.jpg"
+        ]
+    },
+    {
+        "nom": "Hedera helix",
+        "classificacio": "Angiosperma, Araliaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/hedera_helix/hedera1.jpg",
+            "/imatges/hedera_helix/hedera2.jpg",
+            "/imatges/hedera_helix/hedera3.jpg",
+            "/imatges/hedera_helix/hedera4.jpg"
+        ]
+    },
+    {
+        "nom": "Ilex aquifolium",
+        "classificacio": "Angiosperma, Aquifoliaceae",
+        "caracteristiques": [
+            "Revers sense pèls a diferència de l'alzina"
+        ],
+        "imatges": [
+            "/imatges/ilex_aquifolium/ilex.jpg",
+            "/imatges/ilex_aquifolium/ilex1.jpg",
+            "/imatges/ilex_aquifolium/ilex2.jpg",
+            "/imatges/ilex_aquifolium/ilex3.jpg",
+            "/imatges/ilex_aquifolium/ilex4.jpg"
+        ]
+    },
+    {
+        "nom": "Laurus nobilis",
+        "classificacio": "Angiosperma, Lauraceae (Magnòlida)",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/laurus_nobilis/laurus.jpg",
+            "/imatges/laurus_nobilis/laurus1.jpg",
+            "/imatges/laurus_nobilis/laurus2.jpg",
+            "/imatges/laurus_nobilis/laurus3.jpg"
+        ]
+    },
+    {
+        "nom": "Lavandula stoechas",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/lavandula_stoechas/lavan.jpg",
+            "/imatges/lavandula_stoechas/lavan1.jpg",
+            "/imatges/lavandula_stoechas/lavan2.jpg",
+            "/imatges/lavandula_stoechas/lavan3.jpg"
+        ]
+    },
+    {
+        "nom": "Linum usitatissimum",
+        "classificacio": "Angiosperma, Linaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/linum_usitatissimum/linum.jpg",
+            "/imatges/linum_usitatissimum/linum1.jpg",
+            "/imatges/linum_usitatissimum/linum2.jpg",
+            "/imatges/linum_usitatissimum/linum3.jpg",
+            "/imatges/linum_usitatissimum/linum4.jpg"
+        ]
+    },
+    {
+        "nom": "Lonicera implexa",
+        "classificacio": "Angiosperma, Caprifoliaceae",
+        "caracteristiques": [
+            "Fulles oposades",
+            "Pètals soldats, 4 cap amunt i un cap avall"
+        ],
+        "imatges": [
+            "/imatges/lonicera_implexa/lonicera.jpg",
+            "/imatges/lonicera_implexa/lonicera1.jpg",
+            "/imatges/lonicera_implexa/lonicera2.jpg",
+            "/imatges/lonicera_implexa/lonicera3.jpg",
+            "/imatges/lonicera_implexa/lonicera4.jpg"
+        ]
+    },
+    {
+        "nom": "Lunaria annua",
+        "classificacio": "Angiosperma, Brassicaceae",
+        "caracteristiques": [
+            "Crucifera al·lòctona",
+            "Fruit silícula"
+        ],
+        "imatges": [
+            "/imatges/lunaria_annua/lunaria.jpg",
+            "/imatges/lunaria_annua/lunaria1.jpg",
+            "/imatges/lunaria_annua/lunaria2.jpg",
+            "/imatges/lunaria_annua/lunaria3.jpg"
+        ]
+    },
+    {
+        "nom": "Malva sylvestris",
+        "classificacio": "Angiosperma, Malvaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/malva_sylvestris/malva.jpg",
+            "/imatges/malva_sylvestris/malva1.jpg",
+            "/imatges/malva_sylvestris/malva2.jpg"
+        ]
+    },
+    {
+        "nom": "Melissa officinalis",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [
+            "Olor a citronela",
+            "Família de la menta"
+        ],
+        "imatges": [
+            "/imatges/melissa_officinalis/melissa 3.jpg",
+            "/imatges/melissa_officinalis/melissa.jpg",
+            "/imatges/melissa_officinalis/melissa1.jpg",
+            "/imatges/melissa_officinalis/melissa2.jpg"
+        ]
+    },
+    {
+        "nom": "Muscari sp.",
+        "classificacio": "Angiosperma, Liliaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/muscari_sp/mus.jpg",
+            "/imatges/muscari_sp/mus1.jpg",
+            "/imatges/muscari_sp/mus2.jpg"
+        ]
+    },
+    {
+        "nom": "Nerium oleander",
+        "classificacio": "Angiosperma, Apocynaceae",
+        "caracteristiques": [
+            "Verticils de 3",
+            "Mortal"
+        ],
+        "imatges": [
+            "/imatges/nerium_oleander/ner.jpg",
+            "/imatges/nerium_oleander/ner2.jpg",
+            "/imatges/nerium_oleander/ner3.jpg"
+        ]
+    },
+    {
+        "nom": "Olea europaea var. sylvestris",
+        "classificacio": "Angiosperma, Oleaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/olea_europaea_var_sylvestris/ole.jpg",
+            "/imatges/olea_europaea_var_sylvestris/ole1.jpg",
+            "/imatges/olea_europaea_var_sylvestris/ole2.jpg"
+        ]
+    },
+    {
+        "nom": "Opuntia sp.",
+        "classificacio": "Angiosperma, Cactaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/opuntia_sp/opu.jpg",
+            "/imatges/opuntia_sp/opu1.jpeg",
+            "/imatges/opuntia_sp/opu2.jpg"
+        ]
+    },
+    {
+        "nom": "Osyris alba",
+        "classificacio": "Angiosperma, Santalaceae",
+        "caracteristiques": [
+            "Molt ramificada"
+        ],
+        "imatges": [
+            "/imatges/osyris_alba/osy.jpg",
+            "/imatges/osyris_alba/osy1.jpg",
+            "/imatges/osyris_alba/osy2.jpg",
+            "/imatges/osyris_alba/osy3.jpg",
+            "/imatges/osyris_alba/osy4.jpg"
+        ]
+    },
+    {
+        "nom": "Parietaria judaica",
+        "classificacio": "Angiosperma, Urticaceae",
+        "caracteristiques": [
+            "Família ortigues"
+        ],
+        "imatges": [
+            "/imatges/parietaria_judaica/pari.jpg",
+            "/imatges/parietaria_judaica/pari2.jpg",
+            "/imatges/parietaria_judaica/pari3.jpg",
+            "/imatges/parietaria_judaica/pari4.jpg",
+            "/imatges/parietaria_judaica/paru1.jpg"
+        ]
+    },
+    {
+        "nom": "Phillyrea latifolia",
+        "classificacio": "Angiosperma, Oleaceae",
+        "caracteristiques": [
+            "Vora lleugerament dentada",
+            "Fulles suboposades"
+        ],
+        "imatges": [
+            "/imatges/phillyrea_latifolia/phill.jpg",
+            "/imatges/phillyrea_latifolia/phill1.jpg",
+            "/imatges/phillyrea_latifolia/phill2.jpg",
+            "/imatges/phillyrea_latifolia/phill3.jpg",
+            "/imatges/phillyrea_latifolia/phill4.jpg"
+        ]
+    },
+    {
+        "nom": "Pistacia lentiscus",
+        "classificacio": "Angiosperma, Anacardiaceae",
+        "caracteristiques": [
+            "Fulla composta",
+            "Paripinnada"
+        ],
+        "imatges": [
+            "/imatges/pistacia_lentiscus/lentis.jpg",
+            "/imatges/pistacia_lentiscus/lentis1.jpg",
+            "/imatges/pistacia_lentiscus/lentis2.jpg",
+            "/imatges/pistacia_lentiscus/lentis3.jpg",
+            "/imatges/pistacia_lentiscus/lentis4.jpg"
+        ]
+    },
+    {
+        "nom": "Pittosporum tobira",
+        "classificacio": "Angiosperma, Pittosporaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/pittosporum_tobira/pito.jpg",
+            "/imatges/pittosporum_tobira/pito2.jpg",
+            "/imatges/pittosporum_tobira/pito3.jpg",
+            "/imatges/pittosporum_tobira/pito4.jpg",
+            "/imatges/pittosporum_tobira/pito5.jpg"
+        ]
+    },
+    {
+        "nom": "Platanus × hispanica",
+        "classificacio": "Platanaceae",
+        "caracteristiques": [
+            "Fulles semblants a Acer"
+        ],
+        "imatges": [
+            "/imatges/platanus_x_hispanica/platan.jpg",
+            "/imatges/platanus_x_hispanica/platan1.jpg",
+            "/imatges/platanus_x_hispanica/platan2.jpg"
+        ]
+    },
+    {
+        "nom": "Populus alba",
+        "classificacio": "Angiosperma, Salicaceae",
+        "caracteristiques": [
+            "Fulla poligonal arrodonida simple amb peciol gran",
+            "Envers i revers de la fulla de colors molt diferents"
+        ],
+        "imatges": [
+            "/imatges/populus_alba/popu.jpg",
+            "/imatges/populus_alba/popu1.jpg",
+            "/imatges/populus_alba/popu2.jpg"
+        ]
+    },
+    {
+        "nom": "Prunus avium",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Glàndules vermelles al peduncle"
+        ],
+        "imatges": [
+            "/imatges/prunus_avium/avium.jpg",
+            "/imatges/prunus_avium/avium1.jpg",
+            "/imatges/prunus_avium/avium2.jpg",
+            "/imatges/prunus_avium/avium3.jpg"
+        ]
+    },
+    {
+        "nom": "Prunus spinosa",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Espines caulinars"
+        ],
+        "imatges": [
+            "/imatges/prunus_spinosa/spin.jpg",
+            "/imatges/prunus_spinosa/spin1.jpg",
+            "/imatges/prunus_spinosa/spin2.jpg",
+            "/imatges/prunus_spinosa/spin3.jpg"
+        ]
+    },
+    {
+        "nom": "Punica granatum",
+        "classificacio": "Angiosperma, Lythraceae",
+        "caracteristiques": [
+            "Sèpals durs"
+        ],
+        "imatges": [
+            "/imatges/punica_granatum/grana.jpg",
+            "/imatges/punica_granatum/grana1.jpg",
+            "/imatges/punica_granatum/grana2.jpg",
+            "/imatges/punica_granatum/grana3.jpg",
+            "/imatges/punica_granatum/grana4.jpg"
+        ]
+    },
+    {
+        "nom": "Quercus coccifera",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [
+            "Marge de les fulles ondulat amb dents espinoses"
+        ],
+        "imatges": [
+            "/imatges/quercus_coccifera/cocci.jpg",
+            "/imatges/quercus_coccifera/cocci1.jpg",
+            "/imatges/quercus_coccifera/cocci2.jpg",
+            "/imatges/quercus_coccifera/cocci4.jpg"
+        ]
+    },
+    {
+        "nom": "Quercus faginea",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/quercus_faginea/fagin.jpg",
+            "/imatges/quercus_faginea/fagin1.jpg",
+            "/imatges/quercus_faginea/fagin2.jpg",
+            "/imatges/quercus_faginea/fagin3.jpg",
+            "/imatges/quercus_faginea/fagin4.jpg"
+        ]
+    },
+    {
+        "nom": "Quercus ilex",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [
+            "Sol tenir pèls a la cara abaxial",
+            "Vora de les fulles entera o dentada"
+        ],
+        "imatges": [
+            "/imatges/quercus_ilex/ilex.jpg",
+            "/imatges/quercus_ilex/ilex1.jpg",
+            "/imatges/quercus_ilex/ilex2.jpg"
+        ]
+    },
+    {
+        "nom": "Quercus pubescens",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [
+            "Pilositat al revers de la fulla"
+        ],
+        "imatges": [
+            "/imatges/quercus_pubescens/pub1.jpg",
+            "/imatges/quercus_pubescens/pube.jpg",
+            "/imatges/quercus_pubescens/pube2.jpg",
+            "/imatges/quercus_pubescens/pubes3.jpg"
+        ]
+    },
+    {
+        "nom": "Quercus suber",
+        "classificacio": "Angiosperma, Fagaceae",
+        "caracteristiques": [
+            "Suro al tronc"
+        ],
+        "imatges": [
+            "/imatges/quercus_suber/suber.jpg",
+            "/imatges/quercus_suber/suber1.jpg",
+            "/imatges/quercus_suber/subes2.jpg"
+        ]
+    },
+    {
+        "nom": "Ranunculus bulbosus",
+        "classificacio": "Angiosperma, Ranunculaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/ranunculus_bulbosus/ranun.jpg",
+            "/imatges/ranunculus_bulbosus/ranun1.jpg",
+            "/imatges/ranunculus_bulbosus/ranun2.jpg",
+            "/imatges/ranunculus_bulbosus/ranun3.jpg"
+        ]
+    },
+    {
+        "nom": "Rhamnus alaternus",
+        "classificacio": "Angiosperma, Rhamnaceae",
+        "caracteristiques": [
+            "Marge translúcid",
+            "Fuits vermells",
+            "Filotaxi alterna"
+        ],
+        "imatges": [
+            "/imatges/rhamnus_alaternus/rha.jpg",
+            "/imatges/rhamnus_alaternus/rha1.jpg",
+            "/imatges/rhamnus_alaternus/rha2.jpg",
+            "/imatges/rhamnus_alaternus/rha3.JPG"
+        ]
+    },
+    {
+        "nom": "Rubia peregrina",
+        "classificacio": "Angiosperma, Rubiaceae",
+        "caracteristiques": [
+            "Quatre fulles per verticil"
+        ],
+        "imatges": [
+            "/imatges/rubia_peregrina/rubia.jpg",
+            "/imatges/rubia_peregrina/rubia1.jpg",
+            "/imatges/rubia_peregrina/rubia2.jpg"
+        ]
+    },
+    {
+        "nom": "Rubus ulmifolius",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/rubus_ulmifolius/RUBUS.jpg",
+            "/imatges/rubus_ulmifolius/RUBUS1.jpg",
+            "/imatges/rubus_ulmifolius/RUBUS2.jpg",
+            "/imatges/rubus_ulmifolius/RUBUS3.jpg"
+        ]
+    },
+    {
+        "nom": "Rumex sp.",
+        "classificacio": "Angiosperma, Polygonaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/rumex_sp/rumex.jpg",
+            "/imatges/rumex_sp/rumex1.jpg",
+            "/imatges/rumex_sp/rumex2.jpg"
+        ]
+    },
+    {
+        "nom": "Ruscus aculeatus",
+        "classificacio": "Angiosperma, Liliaceae",
+        "caracteristiques": [
+            "Filocladis, tija aplanada amb flor al mig"
+        ],
+        "imatges": [
+            "/imatges/ruscus_aculeatus/ruscus.jpg",
+            "/imatges/ruscus_aculeatus/ruscus1.jpg",
+            "/imatges/ruscus_aculeatus/ruscus2.jpg",
+            "/imatges/ruscus_aculeatus/ruscus3.JPG",
+            "/imatges/ruscus_aculeatus/ruscus4.JPG"
+        ]
+    },
+    {
+        "nom": "Salix babylonica",
+        "classificacio": "Angiosperma, Salicaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/salix_babylonica/salix.jpg",
+            "/imatges/salix_babylonica/salix1.jpg",
+            "/imatges/salix_babylonica/salix2.jpg",
+            "/imatges/salix_babylonica/salix3.jpg"
+        ]
+    },
+    {
+        "nom": "Sambucus nigra",
+        "classificacio": "Angiosperma, Caprifoliaceae",
+        "caracteristiques": [
+            "Fulla composta imparipinnada",
+            "Fil·lotaxi oposada"
+        ],
+        "imatges": [
+            "/imatges/sambucus_nigra/sambucus.jpg",
+            "/imatges/sambucus_nigra/sambucus1.jpg",
+            "/imatges/sambucus_nigra/sambucus2.jpg",
+            "/imatges/sambucus_nigra/sambucus3.jpg",
+            "/imatges/sambucus_nigra/sambucus4.jpg"
+        ]
+    },
+    {
+        "nom": "Sedum sp.",
+        "classificacio": "Angiosperma, Crassulaceae",
+        "caracteristiques": [
+            "Fulles crasses",
+            "Acumulen aigua a l'interior"
+        ],
+        "imatges": [
+            "/imatges/sedum_sp/sedum 3.jpg",
+            "/imatges/sedum_sp/sedum.jpg",
+            "/imatges/sedum_sp/sedum2.jpg"
+        ]
+    },
+    {
+        "nom": "Silene vulgaris",
+        "classificacio": "Angiosperma, Cariofilaceae",
+        "caracteristiques": [
+            "Calze inflat"
+        ],
+        "imatges": [
+            "/imatges/silene_vulgaris/2.jpg",
+            "/imatges/silene_vulgaris/silene.jpg",
+            "/imatges/silene_vulgaris/silene2.jpg"
+        ]
+    },
+    {
+        "nom": "Silybum marianum",
+        "classificacio": "Angiosperma, Asteraceae",
+        "caracteristiques": [
+            "Card"
+        ],
+        "imatges": [
+            "/imatges/silybum_marianum/sili.jpg",
+            "/imatges/silybum_marianum/sili2.jpg",
+            "/imatges/silybum_marianum/sili3.jpg",
+            "/imatges/silybum_marianum/sili4.jpg"
+        ]
+    },
+    {
+        "nom": "Smilax aspera",
+        "classificacio": "Angiosperma, Smilacaceae",
+        "caracteristiques": [
+            "Amb circells y agullons"
+        ],
+        "imatges": [
+            "/imatges/smilax_aspera/smila.jpg",
+            "/imatges/smilax_aspera/smila1.jpg",
+            "/imatges/smilax_aspera/smila2.jpg",
+            "/imatges/smilax_aspera/smila3.jpg",
+            "/imatges/smilax_aspera/smila4.jpg"
+        ]
+    },
+    {
+        "nom": "Sorbus aria",
+        "classificacio": "Angiosperma, Rosaceae",
+        "caracteristiques": [
+            "Revers blanquinós"
+        ],
+        "imatges": [
+            "/imatges/sorbus_aria/sorbus.jpg",
+            "/imatges/sorbus_aria/sorbus1.jpg",
+            "/imatges/sorbus_aria/sorbus2.jpg",
+            "/imatges/sorbus_aria/sorbus3.jpg",
+            "/imatges/sorbus_aria/sorbus4.jpg"
+        ]
+    },
+    {
+        "nom": "Thymus vulgaris",
+        "classificacio": "Angiosperma, Lamiaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/thymus_vulgaris/thy.jpg",
+            "/imatges/thymus_vulgaris/thy2.jpg",
+            "/imatges/thymus_vulgaris/thy3.jpg",
+            "/imatges/thymus_vulgaris/thy4.jpg",
+            "/imatges/thymus_vulgaris/thy5.jpg"
+        ]
+    },
+    {
+        "nom": "Trifolium pratense",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Inflorescència globosa"
+        ],
+        "imatges": [
+            "/imatges/trifolium_pratense/trif.jpg",
+            "/imatges/trifolium_pratense/trif1.jpg",
+            "/imatges/trifolium_pratense/trif2.jpg",
+            "/imatges/trifolium_pratense/trif3.jpg"
+        ]
+    },
+    {
+        "nom": "Ulex parviflorus",
+        "classificacio": "Angiosperma, Fabaceae",
+        "caracteristiques": [
+            "Flor petita"
+        ],
+        "imatges": [
+            "/imatges/ulex_parviflorus/ulec.jpg",
+            "/imatges/ulex_parviflorus/ulex.jpg",
+            "/imatges/ulex_parviflorus/ulex1.jpg",
+            "/imatges/ulex_parviflorus/ulex2.jpg",
+            "/imatges/ulex_parviflorus/ulex3.jpg"
+        ]
+    },
+    {
+        "nom": "Ulmus minor",
+        "classificacio": "Angiosperma, Ulmaceae",
+        "caracteristiques": [
+            "Fulla asserrada, dentació única"
+        ],
+        "imatges": [
+            "/imatges/ulmus_minor/ulmus1.jpg",
+            "/imatges/ulmus_minor/ulmus2.jpg",
+            "/imatges/ulmus_minor/ulmus3.jpg",
+            "/imatges/ulmus_minor/ulmus4.jpg",
+            "/imatges/ulmus_minor/ulmus5.jpg"
+        ]
+    },
+    {
+        "nom": "Umbilicus rupestris",
+        "classificacio": "Angiosperma, Crassulaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/umbilicus_rupestris/umbilicus.jpg",
+            "/imatges/umbilicus_rupestris/umbilicus1.jpg",
+            "/imatges/umbilicus_rupestris/umbilicus2.jpg",
+            "/imatges/umbilicus_rupestris/umbilicus3.jpg"
+        ]
+    },
+    {
+        "nom": "Urtica dioica",
+        "classificacio": "Angiosperma, Urticaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/urtica_dioica/ortiga.jpg",
+            "/imatges/urtica_dioica/ortiga1.jpg",
+            "/imatges/urtica_dioica/ortiga2.jpg",
+            "/imatges/urtica_dioica/ortiga3.jpg",
+            "/imatges/urtica_dioica/ortiga4.jpg",
+            "/imatges/urtica_dioica/ortiga5.jpg"
+        ]
+    },
+    {
+        "nom": "Veronica sp.",
+        "classificacio": "Angiosperma, Scrophulariaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/veronica_sp/vero.jpg",
+            "/imatges/veronica_sp/vero1.jpg",
+            "/imatges/veronica_sp/vero2.PNG"
+        ]
+    },
+    {
+        "nom": "Viburnum tinus",
+        "classificacio": "Angiosperma, Caprifoliaceae",
+        "caracteristiques": [
+            "Fulla peluda",
+            "A la aixella entre el nervi principal i secundaris hi ha pèls"
+        ],
+        "imatges": [
+            "/imatges/viburnum_tinus/viburnum.jpg",
+            "/imatges/viburnum_tinus/viburnum1.jpg",
+            "/imatges/viburnum_tinus/viburnum2.jpg",
+            "/imatges/viburnum_tinus/viburnum3.JPG"
+        ]
+    },
+    {
+        "nom": "Viola sp.",
+        "classificacio": "Violaceae",
+        "caracteristiques": [],
+        "imatges": [
+            "/imatges/viola_sp/viola.jpg",
+            "/imatges/viola_sp/viola1.jpg",
+            "/imatges/viola_sp/viola2.jpg",
+            "/imatges/viola_sp/viola3.jpg"
+        ]
+    }
+]
