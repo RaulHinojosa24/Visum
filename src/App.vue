@@ -107,6 +107,10 @@ export default {
       console.log("lsupdated");
       localStorage.setItem("APP_STATUS", JSON.stringify(this.APP_STATUS));
     },
+    deleteLocalStorage() {
+      localStorage.clear();
+      location.reload();
+    },
   },
   mounted() {
     if (localStorage.getItem("APP_STATUS") !== null) {
@@ -270,6 +274,9 @@ export default {
             <input type="checkbox" v-model="APP_STATUS.visumConfig.unknown" />
             Mostra plantes desconegudes
           </label>
+          <button @click="deleteLocalStorage" class="deleteLocalStorage">
+            Reset
+          </button>
         </div>
       </div>
     </div>
@@ -420,6 +427,7 @@ main {
 
 .config {
   display: block;
+  position: relative;
 }
 
 .config .title {
@@ -443,6 +451,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.deleteLocalStorage {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c23b22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  padding: 1rem 2rem;
 }
 
 .info-card {
