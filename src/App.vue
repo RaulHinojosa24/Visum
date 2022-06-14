@@ -163,7 +163,12 @@ export default {
   <main v-if="APP_STATUS.plants.length != 0">
     <div class="lista" v-show="navBarActive == 0">
       <div class="plantes-conegudes">
-        <h2 class="title">Plantes conegudes</h2>
+        <h2 class="title">
+          <span>Plantes conegudes</span
+          ><span
+            >{{ knownPlants.length }} / {{ APP_STATUS.plants.length }}</span
+          >
+        </h2>
         <ul>
           <li v-for="plant in knownPlants" :key="plant.nom">
             {{ plant.nom }}
@@ -171,7 +176,12 @@ export default {
         </ul>
       </div>
       <div class="plantes-desconegudes">
-        <h2 class="title">Plantes desconegudes</h2>
+        <h2 class="title">
+          <span>Plantes desconegudes</span
+          ><span
+            >{{ knownPlants.length }} / {{ APP_STATUS.plants.length }}</span
+          >
+        </h2>
         <ul>
           <li v-for="plant in unknownPlants" :key="plant.nom">
             {{ plant.nom }}
@@ -414,6 +424,9 @@ main {
   position: sticky;
   top: 0;
   background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .lista .title {
