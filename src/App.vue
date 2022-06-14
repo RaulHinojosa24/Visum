@@ -21,6 +21,7 @@ export default {
       displayInfo: false,
       visibleSlide: 0,
       navBarActive: 1,
+      allowActions: true,
     };
   },
   computed: {
@@ -60,48 +61,95 @@ export default {
   },
   methods: {
     prevImage() {
-      if (this.visibleSlide <= 0) {
-        this.visibleSlide = this.slidesLen - 1;
-      } else {
-        this.visibleSlide--;
+      if (this.allowActions) {
+        if (this.visibleSlide <= 0) {
+          this.visibleSlide = this.slidesLen - 1;
+        } else {
+          this.visibleSlide--;
+        }
       }
     },
     nextImage() {
-      if (this.visibleSlide >= this.slidesLen - 1) {
-        this.visibleSlide = 0;
-      } else {
-        this.visibleSlide++;
+      if (this.allowActions) {
+        if (this.visibleSlide >= this.slidesLen - 1) {
+          this.visibleSlide = 0;
+        } else {
+          this.visibleSlide++;
+        }
       }
     },
     prevPlant() {
-      this.visibleSlide = 0;
-      if (this.APP_STATUS.plantIndex <= 0) {
-        this.APP_STATUS.plantIndex = this.filteredPlants.length - 1;
-        return;
-      }
+      if (this.allowActions) {
+        let prevDisplayInfoValue = this.displayInfo;
+        this.allowActions = false;
+        this.displayInfo = false;
+        this.visibleSlide = 0;
+        setTimeout(
+          () => {
+            if (this.APP_STATUS.plantIndex <= 0) {
+              this.APP_STATUS.plantIndex = this.filteredPlants.length - 1;
 
-      this.APP_STATUS.plantIndex--;
-      this.updateLocalStorage();
+              this.allowActions = true;
+              return;
+            }
+
+            this.APP_STATUS.plantIndex--;
+            this.allowActions = true;
+          },
+          prevDisplayInfoValue ? 500 : 0
+        );
+      }
     },
     nextPlant() {
-      this.visibleSlide = 0;
-      if (this.APP_STATUS.plantIndex + 1 >= this.filteredPlants.length) {
-        this.APP_STATUS.plantIndex = 0;
-        return;
-      }
+      if (this.allowActions) {
+        let prevDisplayInfoValue = this.displayInfo;
+        this.allowActions = false;
+        this.displayInfo = false;
+        this.visibleSlide = 0;
+        setTimeout(
+          () => {
+            if (this.APP_STATUS.plantIndex + 1 >= this.filteredPlants.length) {
+              this.APP_STATUS.plantIndex = 0;
+              this.allowActions = true;
+              return;
+            }
 
-      this.APP_STATUS.plantIndex++;
-      this.updateLocalStorage();
+            this.APP_STATUS.plantIndex++;
+            this.allowActions = true;
+          },
+          prevDisplayInfoValue ? 500 : 0
+        );
+      }
     },
     markAsKnown() {
-      this.filteredPlants[this.APP_STATUS.plantIndex].known = true;
-      this.displayInfo = false;
-      this.updateLocalStorage();
+      if (this.allowActions) {
+        let prevDisplayInfoValue = this.displayInfo;
+        this.allowActions = false;
+        this.displayInfo = false;
+        setTimeout(
+          () => {
+            this.filteredPlants[this.APP_STATUS.plantIndex].known = true;
+            this.updateLocalStorage();
+            this.allowActions = true;
+          },
+          prevDisplayInfoValue ? 500 : 0
+        );
+      }
     },
     markAsUnknown() {
-      this.filteredPlants[this.APP_STATUS.plantIndex].known = false;
-      this.displayInfo = false;
-      this.updateLocalStorage();
+      if (this.allowActions) {
+        let prevDisplayInfoValue = this.displayInfo;
+        this.allowActions = false;
+        this.displayInfo = false;
+        setTimeout(
+          () => {
+            this.filteredPlants[this.APP_STATUS.plantIndex].known = false;
+            this.updateLocalStorage();
+            this.allowActions = true;
+          },
+          prevDisplayInfoValue ? 500 : 0
+        );
+      }
     },
     updateLocalStorage() {
       console.log("lsupdated");
@@ -143,6 +191,9 @@ export default {
       this.APP_STATUS.plantIndex = 0;
       this.updateLocalStorage();
     },
+    "APP_STATUS.plantIndex"() {
+      this.updateLocalStorage();
+    },
   },
 };
 </script>
@@ -179,7 +230,7 @@ export default {
         <h2 class="title">
           <span>Plantes desconegudes</span
           ><span
-            >{{ knownPlants.length }} / {{ APP_STATUS.plants.length }}</span
+            >{{ unknownPlants.length }} / {{ APP_STATUS.plants.length }}</span
           >
         </h2>
         <ul>
