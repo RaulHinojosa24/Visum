@@ -6,14 +6,12 @@ It's a plant carousel with images and info.
 
 ## Project status 
 
-### What can you do atm: 
+### What can you do: 
 
 1. You can move through all the plants and see their photos and information.
-
-### What you will be able to do:
-
-1. Add each plant to a list of known and unknown plants.
-2. See that list in a new tab.
+2. Store them as known or unknown.
+3. You can see those lists.
+4. Lastly, reset the app so you can start all over again.
 
 ## Technology
 
