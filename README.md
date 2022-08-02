@@ -1,4 +1,4 @@
-# Visum 🍀  #WorkInProgress
+# Visum 🍀  #Done!
 
 This project is done to help my girlfriend (and her classmates) study for a botany test at university.
 
@@ -9,9 +9,9 @@ It's a plant carousel with images and info.
 ### What can you do: 
 
 1. You can move through all the plants and see their photos and information.
-2. Store them as known or unknown.
+2. Store them in a list of known and unknown.
 3. You can see those lists.
-4. Lastly, reset the app so you can start all over again.
+4. Lastly, reset the app data so you can start all over again.
 
 ## Technology
 
